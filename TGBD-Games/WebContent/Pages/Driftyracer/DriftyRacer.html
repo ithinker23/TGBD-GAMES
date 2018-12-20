@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-
-<link href="http://localhost:8080/TGBD-Games-2D2P-Game/index.css"
-	type="text/css" rel="stylesheet">
-
-
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Unity WebGL Player | 2D Racing Game</title>
@@ -15,18 +10,12 @@
 <script src="Build/UnityLoader.js"></script>
 <script>
 	var gameInstance = UnityLoader.instantiate("gameContainer",
-			"Build/DriftyRacerBuild.json", {
+			"Build/Build.json", {
 				onProgress : UnityProgress
 			});
 </script>
 </head>
 <body background="background.jpg">
-	    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      </div>
-    </div>
-
-
 	<div class="header">
 		<img id="HeaderLOGO" src="HeaderLOGO.png"
 			alt="image is not displayable">
@@ -44,6 +33,13 @@
 			<p>Home</p>
 		</div>
 
+
+
+
+	</div>
+	<div class="webgl-content">
+		<div id="gameContainer" style="width: 960px; height: 600px"></div>
+		<div class="footer"></div>
 	</div>
 </body>
 </html>
