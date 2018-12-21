@@ -1,10 +1,13 @@
 /**
  * 
  */
+
 console.log("Ready");
 $(document).ready(function () {
 
-
+	$("#2D2PGameText").animate({opacity:0},0);
+	$("#DriftyRacerText").animate({opacity:0},0);
+	
 $("#2D2PGameBTN").click(function(){
 	
 	window.location.href = "https://www.tgbdgames.tk/Pages/2D2P-Game/2D2P-Game.html";
@@ -44,4 +47,40 @@ $("#ContactBTN").click(function(){
 	window.location.href = "https://www.tgbdgames.tk/Pages/Contact-Page/ContactUs.html";
 	console.log("redirecting to Contact Form Page");
 })
+
+
+
+$("#2D2PGamePrev").click(function(){
+	
+	window.location.href = "https://www.tgbdgames.tk/Pages/2D2P-Game/2D2P-Game.html";
+	console.log("redirecting to 2D2P Game");
+	
+})
+$("#2D2PGamePrev").mouseenter(function(){
+	$("#2D2PGameText").finish();
+	$("#2D2PGameText").animate({opacity:0.8});
+
+})
+$("#2D2PGamePrev").mouseout(function(){
+	
+	$("#2D2PGameText").animate({opacity:0});
+	
+})
+
+$("#DriftyRacerPrev").click(function(){
+	
+	window.location.href = "https://www.tgbdgames.tk/Pages/Driftyracer/DriftyRacer.html";
+	console.log("redirecting to 2D2P Game");
+	
+})
+$("#DriftyRacerPrev").mouseenter(function(){
+	$("#DriftyRacerText").finish();
+	$("#DriftyRacerText").animate({opacity:0.8});
+	
+})
+$("#DriftyRacerPrev").mouseout(function(){
+	
+	$("#DriftyRacerText").animate({opacity:0});
+})
+
 });
