@@ -53,12 +53,12 @@
 
 .headerButtonsContainer {
 	display: -webkit-inline-box;
-	margin-right:27%;
+	margin-right:33%;
 	float:right;
 }
 @media only screen and (max-width: 980px){
 	.headerButtonsContainer {
-	margin-right:33%;
+	margin-right:27%;
 }
 }
 .MainPage {
