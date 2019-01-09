@@ -61,7 +61,7 @@ $("#2D2PGamePrev").mouseenter(function(){
 	$("#2D2PGameText").animate({opacity:0.8});
 
 })
-$("#2D2PGamePrev").mouseout(function(){
+$("#2D2PGamePrev").mouseleave(function(){
 	
 	$("#2D2PGameText").animate({opacity:0});
 	
@@ -73,7 +73,7 @@ $("#DriftyRacerPrev").click(function(){
 	console.log("redirecting to 2D2P Game");
 	
 })
-$("#DriftyRacerPrev").mouseenter(function(){
+$("#DriftyRacerPrev").mouseover(function(){
 	$("#DriftyRacerText").finish();
 	$("#DriftyRacerText").animate({opacity:0.8});
 	
