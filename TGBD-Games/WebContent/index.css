@@ -56,27 +56,6 @@
 	margin: 0 35%;
 	float:left;
 }
-
-@media only screen and (max-width: 1717px) {
-	.headerButtonsContainer {
-		margin: 0 33%;
-	}
-}
-@media only screen and (max-width: 1514px) {
-	.headerButtonsContainer {
-		margin: 0 31%;
-	}
-}
-@media only screen and (max-width: 1354px) {
-	.headerButtonsContainer {
-		margin: 0 29%;
-	}
-}
-@media only screen and (max-width: 1108) {
-	.button{
-	display:none;
-	}
-}
 .MainPage {
 	margin:0;
 	width: 100%;
