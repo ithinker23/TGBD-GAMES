@@ -53,7 +53,7 @@
 
 .headerButtonsContainer {
 	display: -webkit-inline-box;
-	margin: 0 35%;
+	margin-left:400px;
 	float:right;
 }
 .MainPage {
