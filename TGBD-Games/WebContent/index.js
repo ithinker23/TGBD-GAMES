@@ -29,25 +29,60 @@ $("#HomeBTN").click(function(){
 	window.location.href = "https://www.tgbdgames.tk";
 	console.log("redirecting to HomePage");
 })
-
+	
+$("#HomeBTN").mouseenter(function(){
+		$("#HomeBTN").finish();
+		$("#HomeBTN").animate({opacity:0});
+})
+	
+$("#HomeBTN").mouseleave(function(){
+		$("#HomeBTN").animate({opacity:1});
+})
+	
 $("#GamesBTN").click(function(){
 	
 	window.location.href = "https://www.tgbdgames.tk/Pages/Game-Landing-Page/GamePage.html";
 	console.log("redirecting to Games-Landing-Page");
 })
-
+	
+$("#GamesBTN").mouseenter(function(){
+	$("#GamesBTN").finish();
+	$("#GamesBTN").animate({opacity:0});
+})
+		     
+$("#GamesBTN").mouseleave(function(){
+	$("#GamesBTN").animate({opacity:1});
+})
+		     
 $("#AboutUsBTN").click(function(){
 	
 	window.location.href = "https://www.tgbdgames.tk/Pages/About-Us-Page/AboutUs.html";
 	console.log("redirecting to About Us Page");
 })
-
+$("#AboutUsBTN").mouseenter(function(){
+$("#AboutUsBTN").finish();
+$("#AboutUsBTN").animate({opacity:0});
+})
+	
+$("#AboutUsBTN").mouseleave(function(){
+$("#AboutUsBTN").animate({opacity:1});
+})
+	
 $("#ContactBTN").click(function(){
 	
 	window.location.href = "https://www.tgbdgames.tk/Pages/Contact-Page/ContactUs.html";
 	console.log("redirecting to Contact Form Page");
 })
 
+$("#ContactBTN").mouseenter(function(){
+	$("#ContactBTN").finish();
+	$("#ContactBTN").animate({opacity:0});
+	
+})
+	
+$("#ContactBTN").mouseleave(function(){
+		$("#ContactBTN").animate({opacity:1});
+})
 
 
 $("#2D2PGamePrev").click(function(){
