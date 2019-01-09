@@ -67,7 +67,6 @@
 	width: 48%;
 	background: white;
 	margin-top: 20px;
-	background-size:100% 100%;
 }
 
 p {
@@ -101,8 +100,9 @@ h2 {
 .GamePreview{
 	height:100%;
 	width: 100%;
-	background-size: 100%;
+	background-size: 100% 100%;
 	cursor: pointer;
+	
 	
 }
 .GamePrevText{
