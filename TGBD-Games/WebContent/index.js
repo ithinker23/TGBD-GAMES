@@ -32,7 +32,7 @@ $("#HomeBTN").click(function(){
 	
 $("#HomeBTN").mouseenter(function(){
 		$("#HomeBTN").finish();
-		$("#HomeBTN").animate({opacity:0});
+		$("#HomeBTN").animate({opacity:0.5});
 })
 	
 $("#HomeBTN").mouseleave(function(){
@@ -47,7 +47,7 @@ $("#GamesBTN").click(function(){
 	
 $("#GamesBTN").mouseenter(function(){
 	$("#GamesBTN").finish();
-	$("#GamesBTN").animate({opacity:0});
+	$("#GamesBTN").animate({opacity:0.5});
 })
 		     
 $("#GamesBTN").mouseleave(function(){
@@ -61,7 +61,7 @@ $("#AboutUsBTN").click(function(){
 })
 $("#AboutUsBTN").mouseenter(function(){
 $("#AboutUsBTN").finish();
-$("#AboutUsBTN").animate({opacity:0});
+$("#AboutUsBTN").animate({opacity:0.5});
 })
 	
 $("#AboutUsBTN").mouseleave(function(){
@@ -76,7 +76,7 @@ $("#ContactBTN").click(function(){
 
 $("#ContactBTN").mouseenter(function(){
 	$("#ContactBTN").finish();
-	$("#ContactBTN").animate({opacity:0});
+	$("#ContactBTN").animate({opacity:0.5});
 	
 })
 	
