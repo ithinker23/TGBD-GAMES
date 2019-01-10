@@ -33,7 +33,7 @@ background: yellow;
     padding: 2px;
     text-align: -webkit-center;
     vertical-align: middle;
-    display: -webkit-box;
+    border-radius: 5px;
 }
 .header {
 
