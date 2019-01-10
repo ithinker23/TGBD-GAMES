@@ -14,6 +14,11 @@ $("#2D2PGameBTN").click(function(){
 	console.log("redirecting to 2D2PGame");
 })
 	
+	$("#cookies").click(function(){
+	$("#cookies").fadeOut();
+	
+	})
+	
 	
 
 
