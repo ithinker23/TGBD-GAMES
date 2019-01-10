@@ -71,7 +71,7 @@
 p {
 	font-size: 20px;
 	color: #6e6e6e;
-
+	position:relative;
 }
 
 .banner {
@@ -139,6 +139,7 @@ h2 {
 	font-size:300%;
 	margin-bottom:20px;
 	margin-top: 200px;
+	position:relative;
 }
 .imageContainer{
 	width:90%;
