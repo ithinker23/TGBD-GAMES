@@ -22,6 +22,12 @@
 	padding-left:10px;
 
 }
+.cookieacceptbutton{
+	background:yellow;
+	color:black;
+	fontsize:13px;
+
+}
 .header {
 
 	height: 75px;
