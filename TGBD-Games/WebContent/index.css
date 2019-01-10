@@ -23,14 +23,17 @@
 
 }
 .cookieacceptbutton{
-	background:yellow;
-	color:black;
-	fontsize:13px;
-	height:25px;
-	width:100px;
-	float:right;
-	margin-right:50px;
-	padding:2px;
+background: yellow;
+    color: black;
+    font-size: 13px;
+    height: 25px;
+    width: 100px;
+    float: right;
+    margin-right: 50px;
+    padding: 2px;
+    text-align: -webkit-center;
+    vertical-align: middle;
+    display: -webkit-box;
 }
 .header {
 
