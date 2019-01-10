@@ -128,3 +128,28 @@ h2 {
 	background:#c7c7c7;
 	padding-top:30px;
 }
+
+.themeText{
+	
+	color:rgb(248, 201, 28);
+	
+}
+.Aboutheader{
+	font-size:50px;
+	margin-bottom:20px;
+	margin-top: 200px;
+}
+.imageContainer{
+	width:1000px;
+	height:400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+    border: grey thick;
+    border-style: solid;
+    margin-bottom: 0px;
+}
+.SectionHeader{
+	font-size:80px;
+	text-align: center;
+	
+}
