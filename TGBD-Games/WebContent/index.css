@@ -5,7 +5,6 @@
 	padding: 0px;
 	z-index: 0;
 	opacity: 1;
-	position:absolute;
 }
 
 .header {
@@ -66,6 +65,7 @@
 	width: 48%;
 	background: white;
 	margin-top: 20px;
+	position:absolute;
 }
 
 p {
