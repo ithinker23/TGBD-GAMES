@@ -62,10 +62,9 @@
 
 .container {
 	height: 60%;
-	width: 48%;
+	width: 47%;
 	background: white;
 	margin-top: 20px;
-	overflow:auto;
 }
 
 p {
