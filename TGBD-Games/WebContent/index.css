@@ -65,7 +65,7 @@
 	width: 48%;
 	background: white;
 	margin-top: 20px;
-	position:relative;
+	overflow:auto;
 }
 
 p {
