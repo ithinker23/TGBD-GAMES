@@ -41,21 +41,29 @@
 	</div>
 	<div class="MainPage">
 		<div class="container" style="float: left; margin-left: 10px;">
-			<form action="mailto:ishansrana2003@gmail.com">
-				<label for="fname">First Name</label> <input type="text" id="fname"
-					name="firstname" placeholder="Your name.."> <label
-					for="lname">Last Name</label> <input type="text" id="lname"
-					name="email" placeholder="Youremail.."> <label for="subject">Subject</label>
-				<textarea id="subject" name="comment"
-					placeholder="Write something.." style="height: 200px"></textarea>
-				<input type="submit" value="Send">
-				<input type="hidden" name="recipient" value="ishansrana2003@gmail.com" />
-				<input type="hidden" name="subject" value="Subject" />
-				<input type="hidden" name="redirect" value="https://www.tgbdgames.tk/pages/contact-page/contactus" />
-				<input type="hidden" name="missing_fields_redirect" value="https://www.tgbdgames.tk/pages/contact-page/errorsending.html" />
-				<input type="hidden" name="required" value="firstname,email,comment" />
-
-			</form>
+			<form method="post" action="https://www.example.com/cgi-bin/FormMail.pl" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
+document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};">
+Your Name
+<br />
+<input name="realname" />
+<br />
+Your Email
+<br />
+<input name="email" />
+<br />
+Your Message
+<br />
+<textarea cols="40" rows="10" name="Message"></textarea>
+<br />
+<input type="submit" value="Send" />
+<input type="hidden" name="recipient" value="admin@example.com" />
+<input type="hidden" name="subject" value="Subject" />
+<input type="hidden" name="redirect" 
+value="https://www.example.com/thanks.html" />
+<input type="hidden" name="missing_fields_redirect" 
+value="https://www.example.com/error.html" />
+<input type="hidden" name="required" value="realname,email,Message" />
+</form>
 		</div>
 
 		<div class="container" style="float: right; font-size: 14px;">
