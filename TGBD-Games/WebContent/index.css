@@ -118,7 +118,7 @@ p {
 }
 
 
-h2 {
+.ContainerHeader {
 	margin-bottom: 25px;
 	border-bottom-style: solid;
 	border-width: 1px;
