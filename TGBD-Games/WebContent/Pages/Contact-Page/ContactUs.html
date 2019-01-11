@@ -1,48 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php
 
-  $email = $_REQUEST['email'] ;
-  $message = $_REQUEST['message'] ;
-
-  // here we use the php mail function
-  // to send an email to:
-  // ishansrana2003@gmail.com
-  mail( "User@tgbdgames.tk", "Feedback Form Results",$message, "From: $email" );
-?>
-	<?php
-require("class.PHPMailer.php");
-
-$mail = new PHPMailer();
-
-$mail->IsSMTP();                                      // set mailer to use SMTP
-$mail->Host = "mail.example.com;mail2.example.com";  // specify main and backup server
-$mail->SMTPAuth = true;     // turn on SMTP authentication
-$mail->Username = "jswan";  // SMTP username
-$mail->Password = "secret"; // SMTP password
-
-$mail->From = "User@tgbdgames.tk";
-$mail->FromName = "Mailer";
-
-$mail->WordWrap = 50;                                 // set word wrap to 50 characters
-$mail->AddAttachment("/var/tmp/file.tar.gz");         // add attachments  // optional name
-$mail->IsHTML(true);                                  // set email format to HTML
-
-$mail->Subject = "Here is the subject";
-$mail->Body    = "This is the HTML message body in bold!";
-$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
-
-if(!$mail->Send())
-{
-   echo "Message could not be sent. 
-";
-   echo "Mailer Error: " . $mail->ErrorInfo;
-   exit;
-}
-
-echo "Message has been sent";
-?>
 <meta charset="ISO-8859-1">
 <title>Contact | TGBD Games</title>
 <link href="/index.css" type="text/css" rel="stylesheet">
@@ -83,27 +42,15 @@ echo "Message has been sent";
 	</div>
 	<div class="MainPage">
 		<div class="container" style="float: left; margin-left: 10px;">
-<form method="post" action="contactusemail.pl" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};">
-Your Name
-<br />
-<input name="realname" />
-<br />
-Your Email
-<br />
-<input name="email" />
-<br />
-Your Message
-<br />
-<textarea cols="40" rows="10" name="Message"></textarea>
-<br />
-<input type="submit" value="Send" />
-<input type="hidden" name="recipient" value="ishansrana2003@gmail.com" />
-<input type="hidden" name="subject" value="Subject" />
-<input type="hidden" name="redirect" 
-value="https://www.tgbdgames.tk/pages/contact-page/contactus" />
-<input type="hidden" name="missing_fields_redirect" 
-value="https://www.tgbdgames.tk/pages/contact-page/error" />
-<input type="hidden" name="required" value="realname,email,Message" />
+<form method="post" name="contact_form"
+action="contact-form-handler.php">
+    Your Name:
+    <input type="text" name="name">
+    Email Address:
+    <input type="text" name="email">
+    Message:
+    <textarea name="message"></textarea>
+    <input type="submit" value="Submit">
 </form>
 		</div>
 
@@ -137,4 +84,44 @@ value="https://www.tgbdgames.tk/pages/contact-page/error" />
 	<div class="footertext">Tools: Eclipse, Netlify, Github, Maven</div>
 	</div> -->
 </body>
+<?php
+$errors = '';
+$myemail = 'yourname@website.com';//<-----Put Your email address here.
+if(empty($_POST['name'])  ||
+   empty($_POST['email']) ||
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
+}
+$name = $_POST['name'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
+$email_address))
+{
+    $errors .= "\n Error: Invalid email address";
+}
+
+if( empty($errors))
+{
+$to = $myemail;
+$email_subject = "Contact form submission: $name";
+$email_body = "You have received a new message. ".
+" Here are the details:\n Name: $name \n ".
+"Email: $email_address\n Message \n $message";
+$headers = "From: $myemail\n";
+$headers .= "Reply-To: $email_address";
+mail($to,$email_subject,$email_body,$headers);
+//redirect to the 'thank you' page
+header('Location: contact-form-thank-you.html');
+}
+?>
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
 </html>
