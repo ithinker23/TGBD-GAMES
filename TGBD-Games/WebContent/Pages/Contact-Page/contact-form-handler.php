@@ -1,8 +1,7 @@
 
-
-
-
-
+<!DOCTYPE html>
+<html>
+<body>
 <?php
 $errors = '';
 $myemail = 'yourname@website.com';//<-----Put Your email address here.
@@ -43,3 +42,5 @@ frmvalidator.addValidation("email","req","Please provide your email");
 frmvalidator.addValidation("email","email",
   "Please enter a valid email address");
 </script>
+   </body>
+   </html>
