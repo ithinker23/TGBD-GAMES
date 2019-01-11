@@ -12,12 +12,13 @@ $("#2D2PGameBTN").click(function(){
 	
 	window.location.href = "https://www.tgbdgames.tk/Pages/2D2P-Game/2D2P-Game.html";
 	console.log("redirecting to 2D2PGame");
+	
 })
 	
-	$("#cookies").click(function(){
-	$("#cookies").fadeOut();
+$("#cookies").click(function(){
+$("#cookies").fadeOut();
 	
-	})
+})
 	
 	
 
@@ -42,6 +43,22 @@ $("#HomeBTN").mouseenter(function(){
 	
 $("#HomeBTN").mouseleave(function(){
 		$("#HomeBTN").animate({opacity:1});
+})
+	
+
+$("#PrivacyBTN").click(function(){
+	
+	window.location.href = "https://www.tgbdgames.tk/pages/privacy-policy/privacypolicy";
+	console.log("redirecting to Privacy Policy");
+})
+	
+$("#PrivacyBTN").mouseenter(function(){
+		$("#PrivacyBTN").finish();
+		$("#PrivacyBTN").animate({opacity:0.5});
+})
+	
+$("#PrivacyBTN").mouseleave(function(){
+		$("#PrivacyBTN").animate({opacity:1});
 })
 	
 $("#GamesBTN").click(function(){
@@ -103,7 +120,7 @@ $("#2D2PGamePrev").mouseenter(function(){
 })
 $("#2D2PGamePrev").mouseleave(function(){
 	
-	$("#2D2PGameText").animate({opacity:0});
+$("#2D2PGameText").animate({opacity:0});
 	
 })
 
