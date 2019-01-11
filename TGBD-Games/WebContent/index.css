@@ -6,37 +6,39 @@
 	z-index: 0;
 	opacity: 1;
 }
-.cookienot{
+
+.cookienot {
 	position: fixed;
 	width: 100%;
 	margin: 0;
 	left: 0;
 	bottom: 0;
 	z-index: 9999999;
-	text-align: left;  
+	text-align: left;
 	padding: 20px 0;
 	font-size: 16px;
 	box-sizing: border-box;
-	background:black;
-	color:white;
-	padding-left:10px;
+	background: black;
+	color: white;
+	padding-left: 10px;
+}
 
+.cookieacceptbutton {
+	background: yellow;
+	color: black;
+	font-size: 13px;
+	height: 25px;
+	width: 100px;
+	float: right;
+	margin-right: 50px;
+	padding: 2px;
+	text-align: -webkit-center;
+	vertical-align: middle;
+	border-radius: 5px;
+	cursor: url("https://dumielauxepices.net/sites/default/files/drawn-cookie-draw-something-524778-6762260.png");
 }
-.cookieacceptbutton{
-background: yellow;
-    color: black;
-    font-size: 13px;
-    height: 25px;
-    width: 100px;
-    float: right;
-    margin-right: 50px;
-    padding: 2px;
-    text-align: -webkit-center;
-    vertical-align: middle;
-    border-radius: 5px;
-}
+
 .header {
-
 	height: 75px;
 	width: 100%;
 	background: white;
@@ -80,13 +82,13 @@ background: yellow;
 
 .headerButtonsContainer {
 	display: -webkit-inline-box;
-	float:right;
+	float: right;
 }
 
 .MainPage {
-	margin:0;
+	margin: 0;
 	width: 100%;
-	height:500px;
+	height: 500px;
 }
 
 .container {
@@ -99,7 +101,7 @@ background: yellow;
 p {
 	font-size: 20px;
 	color: #6e6e6e;
-	position:relative;
+	position: relative;
 }
 
 .banner {
@@ -117,7 +119,6 @@ p {
 	margin-top: 15px;
 }
 
-
 .ContainerHeader {
 	margin-bottom: 25px;
 	border-bottom-style: solid;
@@ -125,94 +126,96 @@ p {
 	font-size: 35px;
 }
 
-.GamePreview{
-	height:100%;
+.GamePreview {
+	height: 100%;
 	width: 100%;
 	background-size: 100% 100%;
 	cursor: pointer;
-	
-	
 }
-.GamePrevText{
-	width:100%;
+
+.GamePrevText {
+	width: 100%;
 	height: 30%;
-	background:black;
+	background: black;
 	opacity: 0.8;
-	color:white;
-	
+	color: white;
 }
-.GamePrevFiller{
-	width:100%;
+
+.GamePrevFiller {
+	width: 100%;
 	height: 70%;
 	background: white;
 	opacity: 0;
 }
-.footertext{
+
+.footertext {
 	font-size: 20px;
-	margin-bottom:20px;
-	padding:0-15px;
-}
-.footer {
-	width:100%;
-	height:230px;
-	background:#c7c7c7;
-	padding-top:30px;
+	margin-bottom: 20px;
+	padding: 0 -15px;
 }
 
-.themeText{
-	
-	color:rgb(248, 201, 28);
-	
+.footer {
+	width: 100%;
+	height: 230px;
+	background: #c7c7c7;
+	padding-top: 30px;
 }
-.Aboutheader{
-	font-size:300%;
-	margin-bottom:20px;
+
+.themeText {
+	color: rgb(248, 201, 28);
+}
+
+.Aboutheader {
+	font-size: 300%;
+	margin-bottom: 20px;
 	margin-top: 200px;
-	position:relative;
+	position: relative;
 }
-.imageContainer{
-	width:90%;
-	height:400px;
+
+.imageContainer {
+	width: 90%;
+	height: 400px;
 	background-size: cover;
 	background-repeat: no-repeat;
-    border: grey thick;
-    border-style: solid;
-    margin-bottom: 0px;
+	border: grey thick;
+	border-style: solid;
+	margin-bottom: 0px;
 }
-.SectionHeader{
-	font-size:80px;
+
+.SectionHeader {
+	font-size: 80px;
 	text-align: center;
-	
 }
+
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
 
 input[type=submit] {
-  background-color: rgb(248, 201, 28);
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+	background-color: rgb(248, 201, 28);
+	color: black;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+	background-color: #45a049;
 }
-.centeredHeader{
-	
+
+.centeredHeader {
 	text-align: center;
-	margin:35px 0px;
+	margin: 35px 0px;
 }
-.centeredp{
-	margin:0 33%;
-	
+
+.centeredp {
+	margin: 0 33%;
 }
