@@ -38,11 +38,11 @@ $("#HomeBTN").click(function(){
 	
 $("#HomeBTN").mouseenter(function(){
 		$("#HomeBTN").finish();
-		$("#HomeBTN").animate({opacity:0.5});
+		$("#HomeBTN").animate({opacity:0.5},0.2);
 })
 	
 $("#HomeBTN").mouseleave(function(){
-		$("#HomeBTN").animate({opacity:1});
+		$("#HomeBTN").animate({opacity:1},0.2);
 })
 	
 
@@ -54,11 +54,11 @@ $("#PrivacyBTN").click(function(){
 	
 $("#PrivacyBTN").mouseenter(function(){
 		$("#PrivacyBTN").finish();
-		$("#PrivacyBTN").animate({opacity:0.5});
+		$("#PrivacyBTN").animate({opacity:0.5},0.2);
 })
 	
 $("#PrivacyBTN").mouseleave(function(){
-		$("#PrivacyBTN").animate({opacity:1});
+		$("#PrivacyBTN").animate({opacity:1},0.2);
 })
 	
 $("#GamesBTN").click(function(){
@@ -69,11 +69,11 @@ $("#GamesBTN").click(function(){
 	
 $("#GamesBTN").mouseenter(function(){
 	$("#GamesBTN").finish();
-	$("#GamesBTN").animate({opacity:0.5});
+	$("#GamesBTN").animate({opacity:0.5},0.2,0.2);
 })
 		     
 $("#GamesBTN").mouseleave(function(){
-	$("#GamesBTN").animate({opacity:1});
+	$("#GamesBTN").animate({opacity:1},0.2);
 })
 		     
 $("#AboutUsBTN").click(function(){
@@ -83,11 +83,11 @@ $("#AboutUsBTN").click(function(){
 })
 $("#AboutUsBTN").mouseenter(function(){
 $("#AboutUsBTN").finish();
-$("#AboutUsBTN").animate({opacity:0.5});
+$("#AboutUsBTN").animate({opacity:0.5},0.2);
 })
 	
 $("#AboutUsBTN").mouseleave(function(){
-$("#AboutUsBTN").animate({opacity:1});
+$("#AboutUsBTN").animate({opacity:1},0.2);
 })
 	
 $("#ContactBTN").click(function(){
