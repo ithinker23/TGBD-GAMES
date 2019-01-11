@@ -206,9 +206,3 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-.containerPrivacyPolicy{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px
-}
