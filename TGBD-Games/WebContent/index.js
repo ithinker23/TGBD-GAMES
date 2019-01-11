@@ -69,7 +69,7 @@ $("#GamesBTN").click(function(){
 	
 $("#GamesBTN").mouseenter(function(){
 	$("#GamesBTN").finish();
-	$("#GamesBTN").animate({opacity:0.5},0.2,0.2);
+	$("#GamesBTN").animate({opacity:0.5},0.2);
 })
 		     
 $("#GamesBTN").mouseleave(function(){
@@ -98,12 +98,12 @@ $("#ContactBTN").click(function(){
 
 $("#ContactBTN").mouseenter(function(){
 	$("#ContactBTN").finish();
-	$("#ContactBTN").animate({opacity:0.5});
+	$("#ContactBTN").animate({opacity:0.5},0.2);
 	
 })
 	
 $("#ContactBTN").mouseleave(function(){
-		$("#ContactBTN").animate({opacity:1});
+		$("#ContactBTN").animate({opacity:1},0.2);
 })
 
 
