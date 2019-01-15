@@ -239,3 +239,9 @@ input[type=submit]:hover {
 .centeredp {
 	margin: 0 33%;
 }
+#2DGameContainer{
+	height:500px;
+}
+#3DGameContainer{
+	height:500px;
+}
